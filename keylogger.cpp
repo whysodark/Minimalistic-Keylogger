@@ -23,9 +23,14 @@ int main()
                               write << key;
                               break;
                               }
+                              else if ( key>=96 && key<=105 )
+                              {
+                                    key-=48;
+                                    write << key;
+                                    break;
+                              }
                               write<<key;
                         }
-
                         else if ( key>64 && key<91 )
                         {
                               write << key;
