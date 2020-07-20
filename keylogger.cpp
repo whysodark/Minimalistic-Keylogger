@@ -25,12 +25,16 @@ int main()
                               }
                               write<<key;
                         }
+
                         else if ( key>64 && key<91 )
                         {
                               write << key;
                               break;
                         }
-
+                        else
+                        {
+                              write<<key;
+                        }
                 }
         }
     }
