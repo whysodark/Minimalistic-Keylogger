@@ -33,7 +33,20 @@ int main()
                         }
                         else
                         {
-                              write<<key;
+                              switch (key)
+                              {
+                                    case  48: write<< ")";  break;
+                                    case  49: write<< "!";  break;
+                                    case  50: write<< "@";  break;
+                                    case  51: write<< "#";  break;
+                                    case  52: write<< "$";  break;
+                                    case  53: write<< "%";  break;
+                                    case  54: write<< "^";  break;
+                                    case  55: write<< "&";  break;
+                                    case  56: write<< "*";  break;
+                                    case  57: write<< "(";  break;
+                                    default: write<<key;
+                              }
                         }
                 }
         }
