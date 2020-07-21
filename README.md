@@ -1,5 +1,5 @@
 # Minimalistic-Keylogger
-Keylogger for Windows.
+Keylogger for Windows and other OS
 
 ## Project Outlines
 
