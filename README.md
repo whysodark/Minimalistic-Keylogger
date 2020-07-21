@@ -1,5 +1,5 @@
 # Minimalistic-Keylogger
-Keylogger for Windows and other OS
+:key: Keylogger for Windows
 
 ## Project Outlines
 
@@ -9,7 +9,7 @@ Keylogger for Windows and other OS
 
 ### Requirements
 
-- OS minimum: Any modern OS
+- OS minimum: Windows XP + 
 - Compiler/IDE:
 	- [MinGW-w64](http://sourceforge.net/projects/mingw-w64/)
 	- or [Orwell Dev-Cpp 5.10](http://sourceforge.net/projects/orwelldevcpp/)
@@ -27,4 +27,7 @@ Keylogger for Windows and other OS
 Just start `keylogger.exe` from any directory. There is no such thing like an install or auto-start routine. 
 ## Uninstall
 
-Open the Task Manager, search for `keylogger.exe` and kill this process. Then delete `keylogger.exe`. That's it.
+Open the Task Manager, search for `keylogger.exe` and kill/delete the process`keylogger.exe`. That's it.
+## Further Functionalities
+
+-Need to add SMTP Support to send the log file 
